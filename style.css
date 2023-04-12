@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(30deg, #439d91 50%, #4a3997 75%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.container{
+    height: 600px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.timer__icon{
+    width: 300px;
+    height: 295px;
+    margin: 25px auto;
+}
+
+#container__title{
+    padding: 10px 20px;
+    font-size: 40px;
+    text-align: center;
+}
+
+input{
+    background: transparent;
+}
+
+.container__inputs,
+.container__labels,
+.container__btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__btns{
+    margin-top: 20px;
+}
+
+.container__labels--label{
+    width: 20%;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px 10px;
+}
+
+.container__inputs--time{
+    border: none;
+    font-size: 50px;
+    width: 90px;
+    height: 50px;
+    outline: none;
+    text-align: center;
+    color: black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.container__inputs--colon{
+    font-size: 30px;
+    margin: 0;
+    padding: 5px 10px;
+}
+
+.btn{
+    width: 33%;
+    height: 50px;
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: aliceblue;
+}
+
+.pause{
+    color: orange;
+}
+
+.start{
+    color: green;
+}
+
+.reset{
+    color: blue;
+}
